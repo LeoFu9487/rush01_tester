@@ -14,4 +14,4 @@ by yfu
 5. If answer is correct, you will see OK and the execution time. Otherwise, you will see KO and you can ```cd diff``` to see the details
 
 
-I created this under Ubuntu 20.04. Contact me if this has some problems in other environments.
+I created this under Ubuntu 20.04. Please use Docker if your OS is not linux.
