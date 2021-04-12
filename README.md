@@ -2,7 +2,9 @@
 by yfu
 
 Usage :
-bash test
-bash test random
+
+## bash test.sh
+
+bash random_test.sh
 
 I created this under Ubuntu 20.04. Contact me if this has some problems in other environments.
