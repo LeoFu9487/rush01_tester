@@ -9,7 +9,7 @@ by yfu
 
 3. ```cd rush01_testser```
 
-4. ```bash test.sh```   or    ```bash random_test.sh```
+4. ```bash test.sh```   or    ```bash random_test.sh <map size>```
 
 5. If answer is correct, you will see OK and the execution time. Otherwise, you will see KO and you can ```cd diff``` to see the details
 
