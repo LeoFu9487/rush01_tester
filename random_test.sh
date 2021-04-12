@@ -1,3 +1,4 @@
+TIME_LIMIT=1
 ./map/map_generator $1
 GREEN="\e[32m"
 RED="\e[31m"
@@ -12,12 +13,18 @@ else
 fi
 cat map/random_map | our_ans/our_rush > our_ans/random_ans
 start=`date +%s%N`
-cat map/random_map | ../rush > your_ans/random_ans
+cat map/random_map | timeout $TIME_LIMIT ../rush > your_ans/random_ans
+time_check=$(echo $?)
 diff your_ans/random_ans our_ans/random_ans > diff/random.txt
 flag="${GREEN}OK${NC}\n"
 if [[ -s diff/random.txt ]];
 then
-	flag="${RED}KO${NC}\n"
+	if [[ "$time_check" = "124" ]]
+	then
+		flag="${RED}TLE${NC}\n"
+	else
+		flag="${RED}KO${NC}\n"
+	fi
 else
 	rm -rf diff/random.txt
 fi

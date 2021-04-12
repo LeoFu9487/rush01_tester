@@ -14,4 +14,8 @@ by yfu
 5. If answer is correct, you will see OK and the execution time. Otherwise, you will see KO and you can ```cd diff``` to see the details
 
 
+```KO``` means wrong answer, ```TLE``` means the execution time of your program is too long.
+
+If you want to change the time limit, just modify the variable ```time_limit``` in both *.sh
+
 I created this under Ubuntu 20.04. Please use Docker if your OS is not linux.
