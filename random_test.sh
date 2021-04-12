@@ -1,4 +1,4 @@
-TIME_LIMIT=1
+TIME_LIMIT=30
 ./map/map_generator $1
 GREEN="\e[32m"
 RED="\e[31m"
@@ -14,6 +14,7 @@ fi
 cat map/random_map | our_ans/our_rush > our_ans/random_ans
 start=`date +%s%N`
 cat map/random_map | timeout $TIME_LIMIT ../rush > your_ans/random_ans
+end=`date +%s%N`
 time_check=$(echo $?)
 diff your_ans/random_ans our_ans/random_ans > diff/random.txt
 flag="${GREEN}OK${NC}\n"
@@ -31,7 +32,6 @@ else
 	rm -rf diff/random.txt
 fi
 printf "test result : $flag"
-end=`date +%s%N`
 run_time=`expr $end - $start`;
 base_time=1000000
 printf "execution time : "
