@@ -11,7 +11,7 @@ by yfu
 
 4. ```bash test.sh```   or    ```bash random_test.sh```
 
-5. If answer is correct, you will see OK and the execution time. Otherwise, you will see KO and you can ```cat diff``` to see the details
+5. If answer is correct, you will see OK and the execution time. Otherwise, you will see KO and you can ```cd diff``` to see the details
 
 
 I created this under Ubuntu 20.04. Contact me if this has some problems in other environments.
