@@ -16,6 +16,6 @@ by yfu
 
 ```KO``` means wrong answer, ```TLE``` means the execution time of your program is too long.
 
-If you want to change the time limit, just modify the variable ```time_limit``` in both *.sh
+If you want to change the time limit, just modify the variable ```TIME_LIMIT``` in both *.sh
 
 I created this under Ubuntu 20.04. Please use Docker if your OS is not linux.

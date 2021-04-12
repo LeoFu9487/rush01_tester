@@ -21,9 +21,11 @@ if [[ -s diff/random.txt ]];
 then
 	if [[ "$time_check" = "124" ]]
 	then
-		flag="${RED}TLE${NC}\n"
+		printf "${RED}TLE${NC}\n"
+		exit 1
 	else
-		flag="${RED}KO${NC}\n"
+		printf "${RED}KO${NC}\n"
+		exit 1
 	fi
 else
 	rm -rf diff/random.txt
