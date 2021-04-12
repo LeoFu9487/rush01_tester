@@ -7,11 +7,8 @@ by yfu
 
 2. ```git clone https://github.com/LeoFu9487/rush01_tester.git```
 
-3. ```bash test.sh```
+3. ```bash test.sh```   or    ```bash random_test.sh```
 
-or
-
-```bash random_test.sh```
 4. If answer is correct, you will see OK and the execution time. Otherwise, you will see KO and you can ```cat diff``` to see the details
 
 
