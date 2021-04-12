@@ -1,3 +1,7 @@
+for i in {1..10}
+do
+	[[ -f ./our_ans/ans$i ]] || cat ./map/map$i | ./our_ans/our_rush > ./our_ans/ans$i
+done
 GREEN="\e[32m"
 RED="\e[31m"
 NC="\e[0m"
